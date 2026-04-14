@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Star Media</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+
+    <!-- SITE HEADER shell div centers and constrains the content Not sticky — scrolls with the page -->
+    <header class="bar">
+      <div class="shell">
+
+        <!-- Logo -->
+        <div class="emblem">
+          <img src="assets/images/logo.png" alt="Three Star Media logo" />
+        </div>
+
+        <!-- nav-block wraps the ul -->
+        <div class="nav-block">
+          <nav aria-label="Site navigation">
+            <ul class="nav-items">
+              <li><a href="#start">Home</a></li>
+              <li><a href="#profile">About Us</a></li>
+              <li><a href="#solutions">Services</a></li>
+              <li><a href="#roster">Team</a></li>
+              <li><a href="#reach">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Search: div with role="search" wrapping the form -->
+        <div role="search" class="finder">
+          <form action="#" method="get">
+            <input
+              type="search"
+              name="q"
+              placeholder="Search..."
+              aria-label="Search this site"
+            />
+            <button type="submit">&#128269;</button>
+          </form>
+        </div>
+
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- HERO Real <img> tag — text overlaid using position:absolute over the image -->
+      <section id="start" class="opener">
+
+        <!-- Actual image tag — NOT a CSS background -->
+        <img
+          src="assets/images/main-banner.jpg"
+          alt="Three Star Media hero banner"
+          class="opener-img"
+        />
+
+        <!-- Text floats on top of the image via CSS -->
+        <div class="opener-text">
+          <h1>Welcome to Three Star Media</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rerum voluptas nesciunt quam nostrum similique nihil laboriosam
+            provident neque.
+          </p>
+          <a href="#reach" class="pill-btn">Connect with us &#9658;</a>
+        </div>
+
+      </section>
+
+
+      <!-- ABOUT US article tag used for the text side -->
+      <section id="profile" class="profile-row">
+        <div class="profile-shell">
+
+          <!-- Left: image -->
+          <div class="profile-snap">
+            <img
+              src="assets/images/about-us.jpg"
+              alt="Modern office with a ping pong table"
+            />
+          </div>
+
+          <!-- Right: article for self-contained company info -->
+          <article class="profile-copy">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              unde repellendus exercitationem asperiores consequatur recusandae.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              velit ipsam atque accusamus nihil laudantium sapiente blanditiis.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- SERVICES article with inner header per card grid-template-areas used in CSS -->
+      <section id="solutions" class="solutions-zone">
+        <h2>Our Services</h2>
+
+        <div class="solutions-deck">
+
+          <!-- article + header inside — different nesting from all versions -->
+          <article class="card card--a">
+            <img src="assets/images/digital.jpg" alt="Laptop showing analytics" />
+            <header class="card-head">
+              <h3>Digital Transformation</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="line-btn">Digital Plans &#9658;</a>
+          </article>
+
+          <article class="card card--b">
+            <img src="assets/images/marketing.jpg" alt="Phone with YouTube logo" />
+            <header class="card-head">
+              <h3>Marketing</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="line-btn">Marketing Plans &#9658;</a>
+          </article>
+
+          <article class="card card--c">
+            <img src="assets/images/video.jpg" alt="Smartphone beside notebook" />
+            <header class="card-head">
+              <h3>Video Production</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="line-btn">Video Plans &#9658;</a>
+          </article>
+
+          <article class="card card--d">
+            <img src="assets/images/web.jpg" alt="Newspaper boxes on sidewalk" />
+            <header class="card-head">
+              <h3>Web Development</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="line-btn">Web Plans &#9658;</a>
+          </article>
+
+          <article class="card card--e">
+            <img src="assets/images/print.jpg" alt="Stack of printed documents" />
+            <header class="card-head">
+              <h3>Print</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="line-btn">Print Plans &#9658;</a>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- VISION Real <img> tag — NOT a CSS background
+           Image and text sit side by side -->
+      <section class="manifesto">
+
+        <!-- Actual image tag -->
+        <img
+          src="assets/images/vision.jpg"
+          alt="Our vision background"
+          class="manifesto-img"
+        />
+
+        <!-- Text sits beside the image -->
+        <div class="manifesto-text">
+          <h2>Our Vision</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="pill-btn">Learn More &#9658;</a>
+        </div>
+
+      </section>
+
+
+      <!-- TEAM  figure + figcaption with p.role for title -->
+      <section id="roster" class="roster-zone">
+        <h2>Our Team</h2>
+
+        <div class="roster-col">
+
+          <figure class="bio-card">
+            <img src="assets/images/john.jpg" alt="Portrait of John Doe" />
+            <figcaption class="bio-text">
+              <h3>John Doe</h3>
+              <!-- p.role instead of h4 for the job title -->
+              <p class="role">CEO &amp; Co-owner</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </figure>
+
+          <!-- bio-card--rev flips image to right side -->
+          <figure class="bio-card bio-card--rev">
+            <img src="assets/images/bob.jpg" alt="Portrait of Bob Rite" />
+            <figcaption class="bio-text">
+              <h3>Bob Rite</h3>
+              <p class="role">CFO &amp; Co-owner</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </section>
+
+
+      <!--  CONTACT -->
+      <section id="reach" class="reach-zone">
+        <h2>Contact Us</h2>
+
+        <div class="reach-grid">
+
+          <!-- Form: p wraps each label+input pair -->
+          <div class="reach-form">
+            <h3>Send us a message</h3>
+
+            <form action="#" method="post">
+
+              <p class="field-wrap">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required />
+              </p>
+
+              <p class="field-wrap">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </p>
+
+              <p class="field-wrap">
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" rows="5" required></textarea>
+              </p>
+
+              <button type="submit" class="pill-btn">Send &#9658;</button>
+
+            </form>
+          </div>
+
+          <!-- Map: street view zoom z=16 -->
+          <div class="map-embed">
+            <h3>Our Location</h3>
+            <iframe
+              src="https://maps.google.com/maps?q=Algonquin%20College&t=h&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Street view map of Algonquin College"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Hours in its own section for semantic grouping -->
+          <section class="hours-block" aria-label="Business hours">
+            <h3>Hours of Operation</h3>
+            <table class="schedule">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday &ndash; Friday</td>
+                  <td>9 AM &ndash; 6 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday &ndash; Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER p for copyright + nav for attribution link -->
+    <footer class="base">
+      <p class="base-copy">&copy; Three Star Media, 2020. All rights reserved.</p>
+      <nav aria-label="Footer navigation" class="base-nav">
+        <ul>
+          <li>
+            Photos by
+            <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+  </body>
+</html>
